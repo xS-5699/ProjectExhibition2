@@ -16,7 +16,7 @@ contract ReputationSystem {
         users[msg.sender] = User(true, 0);
         emit UserRegistered(msg.sender);
     }
-
+Q   2
     function rateUser(address _user, int256 _score) public {
         require(users[msg.sender].registered, "You must be registered to rate");
         require(users[_user].registered, "User not registered");

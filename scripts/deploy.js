@@ -1,15 +1,17 @@
-const hre = require("hardhat");
+const { ethers } = require("hardhat");
+require("dotenv").config();
 
 async function main() {
-  const Reputation = await hre.ethers.getContractFactory("Reputation");
-  const reputation = await Reputation.deploy();
+  const ReputationSystem = await ethers.getContractFactory("ReputationSystem");
+  const contract = await ReputationSystem.deploy();
+  await contract.waitForDeployment();
 
-  await reputation.deployed();
-
-  console.log(`Reputation contract deployed to: ${reputation.address}`);
+  console.log("Contract deployed to:", contract.target);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });

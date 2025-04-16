@@ -37,10 +37,10 @@
         "Lock"
       ]
     },
-    "C:\\MyFiles\\College\\ProjectEx2\\SCM\\SupplierReputation\\contracts\\Reputation.sol": {
-      "lastModificationDate": 1744182316404,
-      "contentHash": "9745f9bd9c7b314eedc4f5f5dd2ca94b",
-      "sourceName": "contracts/Reputation.sol",
+    "C:\\MyFiles\\College\\ProjectEx2\\SCM\\SupplierReputation\\contracts\\ReputationSystem.sol": {
+      "lastModificationDate": 1744352795910,
+      "contentHash": "d27164dfd3b529f59df39250b97d6757",
+      "sourceName": "contracts/ReputationSystem.sol",
       "solcConfig": {
         "version": "0.8.28",
         "settings": {

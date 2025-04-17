@@ -1,11 +1,29 @@
 {
+  "name": "decentralized-reputation-system",
+  "version": "1.0.0",
+  "description": "A decentralized reputation system using Hardhat, Solidity, React, and Next.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network sepolia"
+  },
   "dependencies": {
     "alchemy-sdk": "^3.5.6",
-    "ethers": "^6.13.5"
+    "ethers": "^6.13.5",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
     "dotenv": "^16.4.7",
-    "hardhat": "^2.22.19"
+    "hardhat": "^2.22.19",
+    "typescript": "^5.3.3"
   }
 }

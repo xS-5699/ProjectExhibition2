@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
-import ABI from './abi.json'; // Make sure you have abi.json in the same folder
+import ABI from './abi.json';
 
-export const CONTRACT_ADDRESS = '0xYourDeployedContractAddressHere';
+export const CONTRACT_ADDRESS = ''; // ye field to be entered after getting contract address [need testnet eth]
 
 export const getContract = (providerOrSigner: ethers.Provider | ethers.Signer) => {
   return new ethers.Contract(CONTRACT_ADDRESS, ABI, providerOrSigner);
